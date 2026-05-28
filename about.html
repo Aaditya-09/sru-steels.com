@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | SRU Steels Limited</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="solid">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">SRU</div>
+        <div class="logo-text"><span class="logo-name">SRU STEELS</span><span class="logo-tagline">Limited · Est.
+            1995</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="investors.html">Investors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" class="btn btn-primary nav-cta" onclick="openModal()"><i class="fas fa-file-invoice"></i> Get a
+        Quote</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMobileMenu()">Home</a>
+    <a href="about.html" onclick="closeMobileMenu()">About Us</a>
+    <a href="investors.html" onclick="closeMobileMenu()">Investors</a>
+    <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+    <a href="#" class="btn btn-primary" onclick="openModal();closeMobileMenu()"><i class="fas fa-file-invoice"></i> Get
+      a Quote</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero"
+    style="background:linear-gradient(135deg,rgba(10,22,40,0.90),rgba(26,47,82,0.88)),url('https://images.unsplash.com/photo-1624027492684-327af1fb7559?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+    <div class="page-hero-glow"></div>
+    <div class="container page-hero-content">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>About Us</span>
+      </div>
+      <h1>India's Trusted <span>Steel</span> Trader</h1>
+      <p>Three decades of reliable steel trading, ethical business practices, and delivering strength to India's
+        infrastructure and agriculture — one tonne at a time.</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="about-story">
+    <div class="container">
+      <div class="as-grid">
+        <div class="as-img reveal-l"
+          style="background:url('https://plus.unsplash.com/premium_photo-1661932816149-291a447e3022?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;overflow:hidden;min-height:420px;">
+        </div>
+        <div class="reveal-r">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title">Three Decades of Trusted <span>Steel Trading</span></h2>
+          <p>SRU Steels Limited was incorporated on <strong>11th September 1995</strong> by a group of visionary
+            entrepreneurs in New Delhi. What began as a modest steel trading firm in Malviya Nagar has grown into a
+            BSE-listed steel trading company.</p>
+          <p>Today, SRU Steels sources and supplies premium TMT bars, steel billets, wire rods, structural steel, and
+            agri-grade steel products to the country's leading builders, contractors, agricultural businesses, and
+            re-rolling mills across 22 states.</p>
+          <p>Guided by the principles of quality, transparency, and customer-centricity, we have forged lasting
+            partnerships with over 1,200 clients — making us one of the most reliable names in India's steel trading
+            sector.</p>
+          <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-phone"></i> Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIMELINE
+      <div class="reveal">
+        <span class="section-tag">Our Journey</span>
+        <h2 class="section-title" style="margin-bottom:36px">Three Decades of <span>Milestones</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start">
+        <div class="timeline reveal-l">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">1995</div>
+            <div class="tl-title">Company Founded</div>
+            <div class="tl-desc">SRU Steels Limited incorporated in New Delhi with initial capital of ₹5 Crores as a
+              steel trading and distribution company.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2001</div>
+            <div class="tl-title">First Distribution Hub</div>
+            <div class="tl-desc">Established first dedicated warehouse and distribution hub at Kundli, Haryana —
+              significantly expanding sourcing and supply capacity.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2007</div>
+            <div class="tl-title">BSE Listing</div>
+            <div class="tl-desc">Listed on Bombay Stock Exchange under scrip code SRUSTLS. Raised ₹18 Cr via public
+              issue to fund capacity expansion.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2012</div>
+            <div class="tl-title">BIS Certification &amp; ISO 9001</div>
+            <div class="tl-desc">Obtained BIS IS 1786 mark for TMT bars and ISO 9001:2008 certification — establishing
+              quality as a core differentiator.</div>
+          </div>
+        </div>
+        <div class="timeline reveal-r">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2016</div>
+            <div class="tl-title">Rajasthan Network Expansion</div>
+            <div class="tl-desc">Opened second distribution depot at Neemrana, Rajasthan — bringing SRU closer to
+              agri-belt markets and boosting supply to 80,000 TPA trading volume.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2019</div>
+            <div class="tl-title">Authorised Capital Enhanced</div>
+            <div class="tl-desc">Authorised capital enhanced to ₹62.50 Crores. Reached ₹524 Cr revenue milestone.
+              Entered wire rod and HR coil segments.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2022</div>
+            <div class="tl-title">Agri-Steel Division &amp; Green Operations</div>
+            <div class="tl-desc">Launched dedicated Agri-Steel division serving irrigation, cold storage, and farm
+              infrastructure sectors. Adopted green logistics and solar-powered warehouses.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2025</div>
+            <div class="tl-title">₹842 Cr Revenue &amp; New Trade Partnerships</div>
+            <div class="tl-desc">Achieved record ₹842 Cr trading revenue in FY25. Expanded agri-steel supply chains
+              across Punjab, Haryana, and UP farm belts.</div>
+          </div>
+        </div> -->
+    </div>
+    </div>
+  </section>
+
+  <!-- AGRICULTURE INDUSTRY -->
+  <section id="agri-industry" style="padding:88px 0;background:var(--off-white);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Sector Focus</span>
+        <h2 class="section-title">Cultivating <span> the Future.</span></h2>
+        <p class="section-subtitle">From irrigation infrastructure to cold storage and farm equipment — SRU Steels is
+          the trusted steel partner for India's agricultural backbone.</p>
+      </div>
+
+      <!-- Intro two-column -->
+      <div class="as-grid reveal" style="margin-bottom:56px;">
+        <div style="display:flex;flex-direction:column;justify-content:center;">
+          <p style="font-size:0.97rem;color:var(--text-mid);line-height:1.85;margin-bottom:16px;">We are a leading
+            agricultural trading company dedicated to the seamless distribution of agricultural commodities
+            worldwide. By bridging the gap between producers and global markets, we ensure high-quality commodities
+            reach their destination through our robust logistics network. Our commitment to rigorous quality control and
+            market transparency provides our partners with reliable, year-round availability at competitive prices. We
+            build lasting relationships grounded in trust, integrity, and a shared vision for sustainable agricultural
+            growth. Through strategic sourcing and innovation, we empower the agro-industry while nourishing communities
+            across the globe. Our focus remains on delivering excellence and efficiency at every stage of the supply
+            chain.</p>
+        </div>
+        <div
+          style="background:url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;border-radius:16px;min-height:360px;"
+          class="reveal-r"></div>
+      </div>
+
+      <!-- 4 agri use-case cards -->
+      <!-- <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px;" class="values-row">
+        <div class="wu-card reveal"
+          style="background:var(--white);border:1px solid var(--border);transition-delay:0.05s">
+          <div class="wu-icon" style="background:linear-gradient(135deg,#0d3320,#1a5c38)"><i class="fas fa-water"></i>
+          </div>
+          <h4 style="color:var(--navy)">Irrigation Infrastructure</h4>
+          <p style="color:var(--text-mid)">MS pipes, HR coils, and structural angles for canals, pump houses, drip
+            irrigation networks, and water storage structures across farm belts.</p>
+        </div>
+        <div class="wu-card reveal"
+          style="background:var(--white);border:1px solid var(--border);transition-delay:0.12s">
+          <div class="wu-icon" style="background:linear-gradient(135deg,#0d3320,#1a5c38)"><i
+              class="fas fa-warehouse"></i></div>
+          <h4 style="color:var(--navy)">Cold Storage &amp; Silos</h4>
+          <p style="color:var(--text-mid)">Structural steel, galvanized sheets, and I-beams for grain silos, cold chain
+            warehouses, and agro-processing facility construction.</p>
+        </div>
+        <div class="wu-card reveal"
+          style="background:var(--white);border:1px solid var(--border);transition-delay:0.2s">
+          <div class="wu-icon" style="background:linear-gradient(135deg,#0d3320,#1a5c38)"><i class="fas fa-tractor"></i>
+          </div>
+          <h4 style="color:var(--navy)">Farm Equipment</h4>
+          <p style="color:var(--text-mid)">MS flats, billets, and wire rods sourced for agricultural OEMs manufacturing
+            tractors, harvesters, threshers, and irrigation pumps.</p>
+        </div>
+        <div class="wu-card reveal"
+          style="background:var(--white);border:1px solid var(--border);transition-delay:0.28s">
+          <div class="wu-icon" style="background:linear-gradient(135deg,#0d3320,#1a5c38)"><i class="fas fa-leaf"></i>
+          </div>
+          <h4 style="color:var(--navy)">Polyhouse &amp; Greenhouses</h4>
+          <p style="color:var(--text-mid)">Galvanized tubes, hollow sections, and GI pipes for modern protected
+            cultivation structures, poly-tunnels, and shade-net farms.</p>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- MISSION VISION -->
+  <section style="padding:80px 0;background:var(--white)">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Purpose &amp; Direction</span>
+        <h2 class="section-title">Our Mission &amp; <span>Vision</span></h2>
+      </div>
+      <div class="mv-row">
+        <div class="mv-card mission reveal-l">
+          <div class="mv-card-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Our Mission</h3>
+          <p>To source and deliver the highest quality steel products that power India's infrastructure and agriculture
+            growth, while maintaining ethical business practices, creating stakeholder value, and building long-term
+            partnerships across every sector we serve.</p>
+        </div>
+        <div class="mv-card vision reveal-r">
+          <div class="mv-card-icon"><i class="fas fa-eye"></i></div>
+          <h3>Our Vision</h3>
+          <p>To be among India's top 25 steel companies by 2030, recognised for our commitment to quality,
+            sustainability, and customer satisfaction — building the backbone of a stronger, self-reliant Bharat through
+            superior steel solutions.</p>
+        </div>
+      </div>
+
+      <!-- VALUES -->
+      <div class="section-header reveal">
+        <span class="section-tag">Our Values</span>
+        <h2 class="section-title">Principles That <span>Guide Us</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px" class="values-row">
+        <div class="wu-card reveal"
+          style="background:var(--white);border:1px solid var(--border);transition-delay:0.05s">
+          <div class="wu-icon" style="background:linear-gradient(135deg,#0A1628,#1a2f52)"><i
+              class="fas fa-handshake"></i></div>
+          <h4 style="color:var(--navy)">Integrity</h4>
+          <p style="color:var(--text-mid)">Transparent dealings, honest pricing, and ethical conduct with every
+            stakeholder — customers, employees, and investors.</p>
+        </div>
+        <div class="wu-card reveal"
+          style="background:var(--white);border:1px solid var(--border);transition-delay:0.12s">
+          <div class="wu-icon" style="background:linear-gradient(135deg,#0A1628,#1a2f52)"><i
+              class="fas fa-microscope"></i></div>
+          <h4 style="color:var(--navy)">Innovation</h4>
+          <p style="color:var(--text-mid)">Continuously improving our processes, adopting new technologies, and
+            developing better steel solutions for evolving market needs.</p>
+        </div>
+        <div class="wu-card reveal"
+          style="background:var(--white);border:1px solid var(--border);transition-delay:0.2s">
+          <div class="wu-icon" style="background:linear-gradient(135deg,#0A1628,#1a2f52)"><i class="fas fa-leaf"></i>
+          </div>
+          <h4 style="color:var(--navy)">Sustainability</h4>
+          <p style="color:var(--text-mid)">Committed to zero-effluent operations, renewable energy adoption, and
+            reducing our carbon footprint every year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Partner With Us Today</h2>
+        <p>Get a competitive quote delivered to your inbox within 2 business hours.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-cta-navy" onclick="openModal()"><i class="fas fa-file-invoice"></i> Get a Quote</a>
+        <a href="contact.html" class="btn btn-cta-wh"><i class="fas fa-phone"></i> Talk to Sales</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">SRU</div>
+            <div class="logo-text"><span class="logo-name">SRU STEELS</span><span class="logo-tagline">Limited · Est.
+                1995</span></div>
+          </a>
+          <p>BSE-listed steel trading company headquartered in New Delhi, delivering premium steel products to
+            infrastructure and agriculture sectors across India since 1995.</p>
+          <div class="social-links"><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a><a href="#"
+              class="social-link"><i class="fab fa-x-twitter"></i></a><a href="#" class="social-link"><i
+                class="fab fa-facebook-f"></i></a><a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="f-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="investors.html"><i class="fas fa-chevron-right"></i> Investors</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="f-contact">
+            <li><i class="fas fa-location-dot"></i> C-47 G/F, Shivalik Colony, Malviya Nagar, New Delhi – 110017</li>
+            <li><i class="fas fa-phone"></i> +91 75677 30702</li>
+            <li><i class="fas fa-envelope"></i> srusteels95@gmail.com</li>
+            <li><i class="fas fa-building"></i> CIN: L01111DL1995PLC107286</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-cert">
+        <div class="cert-badges"><span class="cert-pill"><i class="fas fa-certificate"></i> ISO 9001:2015</span><span
+            class="cert-pill"><i class="fas fa-certificate"></i> BIS IS 1786</span><span class="cert-pill"><i
+              class="fas fa-certificate"></i> ISO 14001:2015</span><span class="cert-pill"><i class="fas fa-award"></i>
+            NABL Lab</span><span class="cert-pill"><i class="fas fa-chart-line"></i> BSE Listed</span></div>
+      </div>
+      <div class="footer-bottom">
+        <div>
+          <p>© 2025 SRU Steels Limited. All rights reserved.</p>
+          <p class="cin-text">CIN: L01111DL1995PLC107286 · Reg. No.: 107286 · ROC Delhi I</p>
+        </div>
+        <div class="fb-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Disclaimer</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal"><button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button><span
+        class="section-tag">Quick Enquiry</span>
+      <h3 style="font-size:1.4rem;font-weight:800;color:var(--navy);margin-bottom:6px">Get a Quote</h3>
+      <p style="font-size:0.83rem;color:var(--text-light);margin-bottom:24px">Our sales team will respond within 2
+        hours.</p>
+      <form onsubmit="submitQuote(event)"><input type="hidden" name="_subject"
+          value="New Quote Request — SRU Steels Website">
+        <div class="form-group"><label>Name *</label><input type="text" name="name" placeholder="Your full name"
+            required></div>
+        <div class="form-group"><label>Phone *</label><input type="tel" name="phone" placeholder="+91 98765 43210"
+            required></div>
+        <div class="form-group"><label>Product Required</label><select name="product">
+            <option>TMT Bars</option>
+            <option>Steel Billets</option>
+            <option>Wire Rods</option>
+            <option>HR Coils / Sheets</option>
+            <option>CR Sheets / Coils</option>
+            <option>Structural Steel</option>
+          </select></div>
+        <div class="form-group"><label>Quantity (MT)</label><input type="text" name="quantity" placeholder="e.g. 50 MT">
+        </div><button type="submit" class="btn btn-primary form-btn"><i class="fas fa-paper-plane"></i> Request
+          Quote</button>
+      </form>
+    </div>
+  </div>
+  <button id="btt"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
